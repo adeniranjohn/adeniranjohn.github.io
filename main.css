@@ -1,5 +1,6 @@
 :root {
-    font-size: 100%;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav {
@@ -7,6 +8,8 @@ nav {
     grid-auto-columns: 100%;
     background-color: coral;
     position: fixed;
+    height: 3rem;
+    width: 100%;
     top: 0;
     left: 0;
     font-size: 1.5rem;
@@ -21,21 +24,30 @@ nav a:nth-child(1){
     text-align: left;
 }
 
+nav a:nth-child(2){
+    text-align: right;
+}
 
-
-article#home,
-article#projects,
-article#education,
-article#volunteer,
-article#experience,
-article#contact {
-    padding: 5vh;
+section#home,
+section#projects,
+section#education,
+section#volunteer,
+section#experience,
+section#contact {
+    margin-top: 3rem;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
  
 }
 
-article h1 {
-    text-align: center;
-    margin: 0 auto;
+section#home {
+    vertical-align: bottom;
+    padding: auto;
+    background-image: url("https://res.cloudinary.com/blackjohn/image/upload/v1554350699/BlackJohn.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 2rem;
+}
+h1 {
+    vertical-align: middle;
 }
