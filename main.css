@@ -3,10 +3,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-nav {
-    display: inline-block;
-    grid-auto-columns: 100%;
-    background-color: coral;
+header {
     position: fixed;
     height: 3rem;
     width: 100%;
@@ -15,17 +12,53 @@ nav {
     font-size: 1.5rem;
 }
 
+nav {
+    display: inline-block;
+    background-color: coral;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+
+    
+}
+
 nav a {
     text-decoration: none;
     color: black;
 }
 
 nav a:nth-child(1){
-    text-align: left;
+  color: white;
+
+
 }
 
 nav a:nth-child(2){
-    text-align: right;
+    text-align: end;
+    
+}
+
+div, p {
+    display: block;
+    text-align: center;
+    margin: 1em 5em;
+}
+
+section#home h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div img {
+    border-radius: 5px;
+    margin: 2em;
+}
+
+div > p {
+    display: block;
+   
 }
 
 section#home,
@@ -34,20 +67,8 @@ section#education,
 section#volunteer,
 section#experience,
 section#contact {
-    margin-top: 3rem;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
  
 }
 
-section#home {
-    vertical-align: bottom;
-    padding: auto;
-    background-image: url("https://res.cloudinary.com/blackjohn/image/upload/v1554350699/BlackJohn.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-position-y: 2rem;
-}
-h1 {
-    vertical-align: middle;
-}
