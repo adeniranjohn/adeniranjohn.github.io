@@ -3,6 +3,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+html, body {
+    box-sizing: border-box;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -43,11 +47,6 @@ nav a:nth-child(1){
 
 }
 
-nav a:nth-child(2){
-    text-align: end;
-    
-}
-
  p {
     display: block;
     text-align: center;
@@ -64,6 +63,12 @@ section#home h1 {
     color: #FF8C7D;
 }
 
+section#home p {
+    box-sizing: content-box;
+    margin: 0 20%;
+    text-align: justify;
+}
+
 div img {
     border-radius: 5px;
     padding: 1em;
@@ -75,9 +80,10 @@ section#education,
 section#volunteer,
 section#experience,
 section#contact {
-    padding-top : 3rem;
-    height: 100vh;
+    box-sizing: border-box;
+    margin-top : 3rem;
     color: #4F77B3;
+    height: 100vh;
 }
 
 section#contact {
@@ -116,4 +122,17 @@ div#socials > p.label,
 div#socials > p {
     display: inline;
     margin: 0;
+}
+
+@media screen and (max-width : 400px){
+
+nav {
+    background-color: #0260B3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;       
+}
+
 }
