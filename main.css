@@ -13,8 +13,6 @@ header {
     top: 0;
     left: 0;
     font-size: 1.2rem;
-
-    
 }
 
 nav {
@@ -43,15 +41,29 @@ nav a:focus {
 
 nav a:nth-child(1){
   color: #E7FF96;
-
-
 }
 
- p {
-    display: block;
+ul {
     text-align: center;
-    padding: 1em 5em 0 5em;
+    margin: 0;
+}
+
+ul li {
+    text-decoration: none;
+    display: inline-block;
     color:#0260B3;
+    margin: 0;
+}
+
+section#experience ul li {
+    display: block;
+    text-align: left;
+}
+
+p#summary {
+    margin: 0;
+    padding: 0;
+    border: 5px solid #FF8C7D;
 }
 section#home {
     display: flex;
@@ -59,19 +71,23 @@ section#home {
     justify-content: center;
     align-items: center;
 }
+
 section#home h1 {
     color: #FF8C7D;
+    margin: 0;
 }
 
 section#home p {
     box-sizing: content-box;
     margin: 0 20%;
     text-align: justify;
+    padding: 0 auto;
 }
 
 div img {
     border-radius: 5px;
-    padding: 1em;
+    padding: 0.5em;
+    width: 100%;
 }
 
 section#home,
@@ -82,6 +98,7 @@ section#experience,
 section#contact {
     box-sizing: border-box;
     margin-top : 3rem;
+    padding-top: 3rem;
     color: #4F77B3;
     height: 100vh;
 }
@@ -118,13 +135,19 @@ div > input,textarea {
     color: #B34031;
 }
 
-div#socials > p.label,
-div#socials > p {
+p.label{
     display: inline;
-    margin: 0;
+    margin: 0 2em 0 0;
+    width: 50%;
+}
+ 
+div span {
+    display: inline;
+
+   
 }
 
-@media screen and (max-width : 400px){
+@media screen and (max-width : 600px){
 
 nav {
     background-color: #0260B3;
@@ -133,6 +156,11 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: stretch;       
+}
+
+nav a {
+    text-align: center;
+    border-bottom: 2px solid #E7FF96;
 }
 
 }
