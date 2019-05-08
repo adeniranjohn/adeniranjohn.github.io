@@ -114,21 +114,28 @@ section#volunteer,
 section#experience,
 section#contact {
     box-sizing: border-box;
-    margin: 3rem 1rem 0;
+    margin: 0 auto;
     padding-top: 3rem;
     color: #4F77B3;
     height: 100vh;
 }
-
+section#projects {
+    margin: auto auto;
+    vertical-align: middle;
+}
 section#contact {
     display: flex;
     flex-direction: row;
-    margin: 1rem;
+    margin: 1em;
     flex-wrap: wrap;
 }
 
+section#projects ul li i {
+    font-size: 3rem;
+}
+
 div#socials {
-    text-align: left;
+    overflow: hidden;
     flex: 1;
     padding: 1em;
 
@@ -198,6 +205,10 @@ nav {
 nav a {
     text-align: center;
     border-bottom: 2px solid #E7FF96;
+}
+
+section#home p {
+    margin: 0 auto;
 }
 
 }
