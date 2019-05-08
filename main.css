@@ -1,6 +1,6 @@
 :root {
     font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Karla', sans-serif;
 }
 
 html, body {
@@ -16,7 +16,7 @@ header {
 }
 
 nav {
-    background-color: #0260B3;
+    background-color: rgb(9, 117, 211);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@ nav {
     align-items: stretch;
        
 }
-a > i {
+nav a > i {
     padding: 0.2em;
 }
 
@@ -32,19 +32,21 @@ nav a {
     text-decoration: none;
     padding: 0.2em;
     margin: 0.5em;
-    color:#FF8C7D;
+    color:rgb(255, 255, 255);
 }
 
 nav a:focus {
     border-bottom: 2px solid #E7FF96;
+    font-size: 1.2em;
 }
 
 nav a:nth-child(1){
-  color: #E7FF96;
+  color:rgb(255, 255, 255);
 }
 
 ul {
     text-align: center;
+    padding: 0; 
     margin: 0;
 }
 
@@ -63,7 +65,7 @@ section#experience ul li {
 p#summary {
     margin: 0;
     padding: 0;
-    border: 5px solid #FF8C7D;
+  
 }
 section#home {
     display: flex;
@@ -73,8 +75,13 @@ section#home {
 }
 
 section#home h1 {
-    color: #FF8C7D;
-    margin: 0;
+    color: rgb(0, 72, 206);
+    margin: 0 auto;
+}
+
+div#contacts a i,
+div#contacts i {
+    color: rgb(0, 72, 206);
 }
 
 section#home p {
@@ -84,10 +91,20 @@ section#home p {
     padding: 0 auto;
 }
 
-div img {
-    border-radius: 5px;
+div ul li a {
+
+    text-align: center;
+
+
+}
+
+div ul li {
     padding: 0.5em;
-    width: 100%;
+}
+
+div img {
+    padding: 0.5em;
+     margin: 0 auto;
 }
 
 section#home,
@@ -97,7 +114,7 @@ section#volunteer,
 section#experience,
 section#contact {
     box-sizing: border-box;
-    margin-top : 3rem;
+    margin: 3rem 1rem 0;
     padding-top: 3rem;
     color: #4F77B3;
     height: 100vh;
@@ -107,6 +124,7 @@ section#contact {
     display: flex;
     flex-direction: row;
     margin: 1rem;
+    flex-wrap: wrap;
 }
 
 div#socials {
@@ -122,29 +140,48 @@ div#messageme {
 }
 
 h2 {
-    text-align: left;
+
 }
 
 div > label {
     display: block;
+    
 }
 
 
 div > input,textarea {
     width: 30rem;
-    color: #B34031;
+    padding: 0.75em;
+    color: rgb(9, 117, 211);
+    margin-bottom: 1em;
+    border: 1px solid #B34031;
+    border-radius: 2px;
 }
 
 p.label{
     display: inline;
     margin: 0 2em 0 0;
-    width: 50%;
+    font-size: bold;
 }
- 
-div span {
-    display: inline;
+
+p strong {
+    width: 20%;
+
+}
+span    
+ {
+    display: inline-block;
+    margin:  1em;
+   
+    text-align: right;
 
    
+}
+button {
+    color: white;
+    background-color:  rgb(9, 117, 211);
+    padding: 1em;
+    border-radius: 5px;
 }
 
 @media screen and (max-width : 600px){
@@ -155,7 +192,7 @@ nav {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: stretch;       
+    align-items: center;       
 }
 
 nav a {
