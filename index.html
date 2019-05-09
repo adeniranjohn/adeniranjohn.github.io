@@ -1,26 +1,29 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Adeniran John</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <meta name="description" content="John Adeniran page">
+    <meta name="theme-color" content="#0975CA"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" disabled>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" disabled>
+    <link rel="stylesheet" href="main.css" disabled>
+    <script src="main.js" async defer></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#home"><i class="fas fa-home"></i>Home</a>
-            <a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a>
-            <a href="#education"><i class="fas fa-graduation-cap"></i>Education</a>
-            <a href="#volunteer"><i class="fas fa-hands-helping"></i>Volunteer</a>
-            <a href="#experience"><i class="fas fa-suitcase"></i>Experience</a>
-            <a href="#contact"><i class="fas fa-address-book"></i>Contact</a>
+            <a href="#home" rel="noopener"><i class="fas fa-home"></i>Home</a>
+            <a href="#projects" rel="noopener"><i class="fas fa-project-diagram"></i>Projects</a>
+            <a href="#education" rel="noopener"><i class="fas fa-graduation-cap"></i>Education</a>
+            <a href="#volunteer" rel="noopener"><i class="fas fa-hands-helping"></i>Volunteer</a>
+            <a href="#experience" rel="noopener"><i class="fas fa-suitcase"></i>Experience</a>
+            <a href="#contact" rel="noopener"><i class="fas fa-address-book"></i>Contact</a>
 
         </nav>
     </header>
@@ -35,19 +38,19 @@
 
 
                 <ul>
-                    <li><a href="https://github.com/adeniranjohn" alt="GitHub" target="_blank"><i
+                    <li><a href="https://github.com/adeniranjohn" alt="GitHub" target="_blank" rel="noopener" aria-label="GitHub"><i
                                 class="fab fa-github"></i></a>
                     </li>
-                    <li><a href="https://stackoverflow.com/users/6594090/adeniran-john" target="_blank"><i
+                    <li><a href="https://stackoverflow.com/users/6594090/adeniran-john" target="_blank" rel="noopener" aria-label="StackOverFlow"><i
                                 class="fab fa-stack-overflow" alt="StackOverflow"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/adeniranjohn" alt="LinkedIn" target="_blank"><i
+                    <li><a href="https://www.linkedin.com/in/adeniranjohn" alt="LinkedIn" target="_blank" rel="noopener" aria-label="LinkedIn"><i
                                 class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
 
             <div id="quote">simply coder</div>
             <div id="contacts"><i class="fas fa-phone"></i> 08131510308 | <i class="fas fa-envelope"></i>
-                jasolajohn@gmail.com | <a href=""><i class="fab fa-twitter"></i></a></i> @jasolajohn </div>
+                jasolajohn@gmail.com | <a href="https://twitter.com/jasolajohn" rel="noopener" aria-label="Twitters"><i class="fab fa-twitter"></i></a></i> @jasolajohn </div>
             <div id="todayDate"></div>
 
 
@@ -58,18 +61,18 @@
         <section id="projects">
                 <ul>
                         <li> Project under construction</li>
-                        <div><li><i class="fas fa-tools"></i></li></div>
+                       <li><i class="fas fa-tools"></i></li>
                     </ul>
         </section>
         <section id="education">
-            <div id="education">
+           
                 <h2><strong>Education & Certifications</strong></h2>
                 <p><strong>PGD in Information Technology</strong>National Open University | 4.27/5 | 2015</p>
                 <p><strong>Comptia A+(220-801)</strong>Comptia Inc.| 705/900</p>
                 <p><strong>HND in Computer Engineering</strong>Federal Polytechnic, Offa | 3.27/4 | 2007</p>
                 <p><strong>OND in Computer Engineering </strong>Federal Polytechnic, Offa | 3.14/4 | 2005</p>
 
-            </div>
+        
         </section>
         <section id="volunteer">
             <div class="skills">
@@ -136,12 +139,12 @@
                 <h2>Reach out to me...</h2>
                 <form>
                     <div>
-                        <label>Name</label>
-                        <input type="text"></div>
-                    <div><label>Email</label>
-                        <input type="text"></div>
-                    <div><label>Message</label>
-                        <textarea rows="20"></textarea></div>
+                        <label for="name">Name</label>
+                        <input type="text" aria-label="name" name="name" id="name"></div>
+                    <div><label for="email">Email</label>
+                        <input type="text" aria-label="email" name="email" id="email"></div>
+                    <div><label for="message">Message</label>
+                        <textarea rows="20" aria-label="message" name="message" id="message" ></textarea></div>
                     <button>Send</button>
                 </form>
             </div>
@@ -153,7 +156,7 @@
     <footer>
 
     </footer>
-    <script src="main.js" async defer></script>
+    
 </body>
 
 </html>

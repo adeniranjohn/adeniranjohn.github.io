@@ -31,3 +31,14 @@ function time() {
 
 setInterval(time,1000)
 
+
+if('serviceWorker' in navigator){
+    navigator.serviceWorker
+    .register('serviceWorker.js',{scope:''})
+    .then(function(registration){
+        console.log('Service worker registered', registration);
+    })
+    .catch(function(err){
+        console.log("Service worker failed to register",err);
+    })
+}
