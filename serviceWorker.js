@@ -37,12 +37,13 @@ self.addEventListener('fetch',function(e){
     e.respondWith(
         caches.match(e.request).then(function(response){
             if(response){
-                console.log("[ServiceWorker Found in cache", e.request.url);
+                console.log("[ServiceWorker] Found in cache", e.request.url);
                 return response;
             }
 
-            var requestClone = e.request.clone
-          fetch(requestClone).then(function(response){
+            var requestClone = e.request.clone();
+          fetch(requestClone)
+          .then(function(response){
               if(!response){
                   console.log("[ServiceWorker] no response from fetch");
                   return response;
