@@ -1,26 +1,65 @@
 
 html, body {
     box-sizing: border-box;
-    font-size: 16px;
     font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header {
+    width: 100%;
+    margin: 0;
+    padding:0;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    font-size: 1.2rem;
+article {
 
+    margin:0;
+    padding: 1em;
+    display: grid;
+    grid-template-columns:1fr 4fr 1fr;
+    align-items: center;
+  
+    
+}
+div#logo {
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: 0.2em solid rgb(9, 117, 211);
+    justify-self: center;
+}
+
+div#name {
+    text-align: left;
+}
+
+div#tags {
+    justify-self: center;
+
+    
+}
+
+div#tags ul li i  {
+    font-size: 2rem;
+}
+
+div img {
+    border-radius: 50%;
+    margin:auto;
+    padding:0;
 }
 
 nav {
-    background-color: rgb(9, 117, 211);
+   
+    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
 }
+
+
 nav a i {
     padding: 0.1em;
     font-size: 0.8em;
@@ -30,7 +69,7 @@ nav a {
     text-decoration: none;
     padding: 0.2em;
     margin: 0.5em;
-    color:rgb(255, 255, 255);
+    color: rgb(9, 117, 211);
     flex: 1;
 }
 
@@ -38,19 +77,17 @@ nav a:focus {
     border-bottom: 2px solid #E7FF96;
     font-size: 1.2em;
     text-align: center;
+    background-color: rgb(9, 117, 211);
+    color: white;
 }
 
-section#home div img {
 
-    margin: 0 auto;
-    border-radius: 50%;
-    border: 0.2em solid rgb(9, 117, 211);
-}
 
 ul {
     text-align: center;
     padding: 0; 
     margin: 0;
+    vertical-align: middle;
 }
 
 ul li {
@@ -87,12 +124,6 @@ div#contacts i {
     color: rgb(0, 72, 206);
 }
 
-section#home p {
-    box-sizing: content-box;
-    margin: 0 20%;
-    text-align: justify;
-    padding: 0 auto;
-}
 
 div ul li a {
 
@@ -106,7 +137,6 @@ div ul li {
 }
 
 
-
 section#home,
 section#projects,
 section#education,
@@ -118,8 +148,7 @@ section#contact {
     margin: 0 auto;
     padding: 3rem 0;
     color: #4F77B3;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 section#projects {
     margin: auto auto;
@@ -148,9 +177,6 @@ div#messageme {
 
 }
 
-h2 {
-
-}
 
 div > label {
     display: block;
@@ -187,7 +213,7 @@ span
    
 }
 button {
-    color: white;
+    color: #B34031;
     background-color:  rgb(9, 117, 211);
     padding: 1em;
     border-radius: 5px;
@@ -218,3 +244,63 @@ section#contact {
 }
 
 }
+
+
+@media (min-width: 1281px) {
+
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+        html {
+
+        
+        width:100%;
+        }
+  }
