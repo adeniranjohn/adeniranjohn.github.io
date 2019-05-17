@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x:hidden;
 }
 header {
     width: 100%;
@@ -144,9 +145,7 @@ section#volunteer,
 section#experience,
 section#contact {
 
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 3rem 0;
+
     color: #4F77B3;
     width: 100%;
 }
@@ -162,7 +161,7 @@ section#contact {
 }
 
 section#projects ul li i {
-    font-size: 3rem;
+ 
 }
 
 div#socials {
@@ -185,7 +184,7 @@ div > label {
 
 
 div > input,textarea {
-    width: 80%;
+    
     padding: 0.75em;
     color: rgb(9, 117, 211);
     margin: 1em;
@@ -221,27 +220,7 @@ button {
 
 @media screen and (max-width : 600px){
 
-nav {
-    background-color: #0260B3;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;       
-}
 
-nav a {
-    text-align: center;
-    border-bottom: 2px solid #E7FF96;
-}
-
-section#home p {
-    margin: 0 auto;
-}
-
-section#contact {
-    flex-direction: column;
-}
 
 }
 
@@ -298,9 +277,5 @@ section#contact {
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
-        html {
-
-        
-        width:100%;
-        }
+       
   }
