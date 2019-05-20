@@ -27,8 +27,6 @@ article {
 div#logo {
     margin: 0;
     padding: 0;
-    border-radius: 50%;
-    border: 0.2em solid rgb(9, 117, 211);
     justify-self: center;
 }
 
@@ -58,6 +56,7 @@ dic#quote {
 
 div img {
     border-radius: 50%;
+   
     margin: 0 auto;
     padding:0;
 }
@@ -69,6 +68,7 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 
@@ -134,7 +134,10 @@ section#home h1 {
 div#contacts a i,
 div#contacts i {
     color: rgb(0, 72, 206);
+    
 }
+
+
 
 
 div ul li a {
@@ -154,13 +157,13 @@ main {
 section#home,
 section#projects,
 section#education,
-section#volunteer,
+section#skillset,
 section#experience,
 section#contact {
 
-
+    margin: 0 auto;
     color: #4F77B3;
-    width: 100%;
+    width: 95%;
 }
 section#projects {
     margin: auto auto;
@@ -186,6 +189,10 @@ div#messageme {
 
 }
 
+h2  {
+    text-align: center;
+    border-bottom: #B34031 2px solid;
+}
 
 div > label {
     display: block;
@@ -258,11 +265,13 @@ section#contact {
 
 }
 
+@media (max-width: 600px){
 
+}
   
 
   
-  @media (max-width: 480px) {
+  @media (min-width: 300px and max-width: 480px) {
     
     article {
     
@@ -272,15 +281,23 @@ section#contact {
     }
 
     div#logo {
-        display: inline;
-        
-    }
-
-    div#name {
-        display: inline;
+        display: block;
         text-align: center;
     }
 
+    div#name {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+   
+    }
+
+    nav a {
+        color: white;
+    }
     div#tags {
         display: block;
         text-align: center;
@@ -288,6 +305,10 @@ section#contact {
 
     section#contact {
         text-align: left;
+    }
+
+    div#contacts {
+        font-size: 1rem;
     }
   }
   
