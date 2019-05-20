@@ -20,6 +20,7 @@ article {
     display: grid;
     grid-template-columns:1fr 4fr 1fr;
     align-items: center;
+    grid-gap: 5px;
   
     
 }
@@ -35,6 +36,11 @@ div#name {
     text-align: left;
 }
 
+div#name h1 {
+    margin: 0;
+    padding: 0;
+}
+
 div#tags {
     justify-self: center;
 
@@ -45,9 +51,14 @@ div#tags ul li i  {
     font-size: 2rem;
 }
 
+dic#quote {
+    margin: 0;
+    padding: 0;
+}
+
 div img {
     border-radius: 50%;
-    margin:auto;
+    margin: 0 auto;
     padding:0;
 }
 
@@ -137,7 +148,9 @@ div ul li {
     padding: 0.5em;
 }
 
-
+main {
+    margin: 0.5rem;
+}
 section#home,
 section#projects,
 section#education,
@@ -160,9 +173,6 @@ section#contact {
     flex-wrap: wrap;
 }
 
-section#projects ul li i {
- 
-}
 
 div#socials {
     overflow: hidden;
@@ -184,7 +194,7 @@ div > label {
 
 
 div > input,textarea {
-    
+    width: 80%;
     padding: 0.75em;
     color: rgb(9, 117, 211);
     margin: 1em;
@@ -217,65 +227,67 @@ button {
     padding: 1em;
     border-radius: 5px;
 }
-
+footer {
+    color: #0260B3;
+    text-align: center;
+    font-size: 0.5rem;
+}
 @media screen and (max-width : 600px){
 
+nav {
+    background-color: #0260B3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;       
+}
 
+nav a {
+    text-align: center;
+    border-bottom: 2px solid #E7FF96;
+}
+
+section#home p {
+    margin: 0 auto;
+}
+
+section#contact {
+    flex-direction: column;
+}
 
 }
 
 
-@media (min-width: 1281px) {
+  
 
-  }
   
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (max-width: 480px) {
     
+    article {
+    
+       display: block;
 
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
 
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
+    }
 
-    
-  }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
+    div#logo {
+        display: inline;
+        
+    }
 
+    div#name {
+        display: inline;
+        text-align: center;
+    }
+
+    div#tags {
+        display: block;
+        text-align: center;
+    }
+
+    section#contact {
+        text-align: left;
+    }
   }
   
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-       
-  }
