@@ -18,10 +18,10 @@ article {
     margin:0;
     padding: 1em;
     display: grid;
-    grid-template-columns:1fr 4fr 1fr;
+    grid-template-columns:1fr 4fr 2fr;
     align-items: center;
     grid-gap: 5px;
-  
+    height: auto;
     
 }
 div#logo {
@@ -46,10 +46,18 @@ div#tags {
 }
 
 div#tags ul li i  {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #4F77B3;
+    border: 2px solid #B34031;
+    padding: 5px;
 }
 
-dic#quote {
+
+strong i, h3 i {
+    border: 2px solid #B34031;
+    padding: 5px;
+}
+div#quote {
     margin: 0;
     padding: 0;
 }
@@ -67,8 +75,9 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    text-align: center;
     flex-wrap: wrap;
+    background-color: #0260B3;
+    color: white;
 }
 
 
@@ -81,16 +90,16 @@ nav a {
     text-decoration: none;
     padding: 0.2em;
     margin: 0.5em;
-    color: rgb(9, 117, 211);
     flex: 1;
+    align-self: center;
+    background-color: rgb(9, 117, 211);
+    color: white;
 }
 
 nav a:focus {
-    border-bottom: 2px solid #E7FF96;
     font-size: 1.2em;
     text-align: center;
-    background-color: rgb(9, 117, 211);
-    color: white;
+    
 }
 
 
@@ -131,20 +140,8 @@ section#home h1 {
     margin: 0 auto;
 }
 
-div#contacts a i,
-div#contacts i {
-    color: rgb(0, 72, 206);
-    
-}
-
-
-
-
 div ul li a {
-
     text-align: center;
-
-
 }
 
 div ul li {
@@ -169,7 +166,7 @@ section#projects {
     margin: auto auto;
     vertical-align: middle;
 }
-section#contact {
+div#contacts {
     display: flex;
     flex-direction: row;
     margin: 1em;
@@ -177,21 +174,19 @@ section#contact {
 }
 
 
-div#socials {
+div#socials,
+div#messageme {
     overflow: hidden;
     flex: 1;
     padding: 1em;
 
 }
-div#messageme {
-    flex: 1;
-    padding: 1em;
-
-}
+ 
 
 h2  {
-    text-align: center;
-    border-bottom: #B34031 2px solid;
+    text-align: left;
+    margin: 1em;
+    display: block;
 }
 
 div > label {
@@ -204,7 +199,7 @@ div > input,textarea {
     width: 80%;
     padding: 0.75em;
     color: rgb(9, 117, 211);
-    margin: 1em;
+    
     border: 1px solid #B34031;
     border-radius: 2px;
 }
@@ -229,16 +224,19 @@ span
    
 }
 button {
-    color: #B34031;
+    color: white;
     background-color:  rgb(9, 117, 211);
-    padding: 1em;
+    padding: 0.75em;
     border-radius: 5px;
+    border: #B34031 2px solid;
 }
 footer {
     color: #0260B3;
     text-align: center;
     font-size: 0.5rem;
 }
+
+
 @media screen and (max-width : 600px){
 
 nav {
@@ -259,25 +257,28 @@ section#home p {
     margin: 0 auto;
 }
 
-section#contact {
-    flex-direction: column;
-}
+
 
 }
 
-@media (max-width: 600px){
+@media (min-width: 659px) and (max-width: 1002px){
+    div
 
 }
   
 
   
-  @media (min-width: 300px and max-width: 480px) {
+  @media (min-width: 300px) and (max-width: 600px) {
     
     article {
     
        display: block;
 
 
+    }
+
+    p  strong {
+        display: block;
     }
 
     div#logo {
@@ -292,8 +293,7 @@ section#contact {
 
     nav {
         flex-wrap: wrap;
-   
-    }
+       }
 
     nav a {
         color: white;
