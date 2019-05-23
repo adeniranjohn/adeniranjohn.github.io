@@ -174,7 +174,6 @@ div#contacts {
 }
 
 
-div#socials,
 div#messageme {
     overflow: hidden;
     flex: 1;
@@ -231,11 +230,22 @@ button {
     border: #B34031 2px solid;
 }
 footer {
-    color: #0260B3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #0260B3;
+    height: 50px;
     text-align: center;
     font-size: 0.5rem;
 }
 
+div#contacts i {
+    padding: 0.1em;
+    font-size: 2em;
+    color: white;
+    border: 2px solid #B34031;
+    align-self: baseline;
+}
 
 @media screen and (max-width : 600px){
 
@@ -262,7 +272,7 @@ section#home p {
 }
 
 @media (min-width: 659px) and (max-width: 1002px){
-    div
+
 
 }
   
@@ -304,11 +314,9 @@ section#home p {
     }
 
     section#contact {
-        text-align: left;
+
     }
 
-    div#contacts {
-        font-size: 1rem;
-    }
+ 
   }
   
