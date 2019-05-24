@@ -104,25 +104,29 @@ nav a:focus {
 
 
 
-ul {
+div#tags ul {
     text-align: center;
     padding: 0; 
     margin: 0;
     vertical-align: middle;
 }
 
-ul li {
+
+div#tags ul li {
     text-decoration: none;
     display: inline-block;
     color:#0260B3;
     margin: 0;
 }
 
-section#experience ul li {
+ul.points ul li {
     display: block;
     text-align: left;
 }
+section#experience h4 {
+    padding-inline-start: 40px;
 
+}
 p#summary {
     margin: 0;
     padding: 0;
@@ -140,11 +144,11 @@ section#home h1 {
     margin: 0 auto;
 }
 
-div ul li a {
+div#tags ul li a {
     text-align: center;
 }
 
-div ul li {
+div#tags ul li {
     padding: 0.5em;
 }
 
@@ -181,7 +185,10 @@ div#messageme {
 
 }
  
-
+ul.points {
+    margin:0;
+    text-align: left;
+}
 h2  {
     text-align: left;
     margin: 1em;
@@ -192,6 +199,7 @@ div > label {
     display: block;
     
 }
+
 
 
 div > input,textarea {
@@ -209,16 +217,19 @@ p.label{
     font-size: bold;
 }
 
-p strong {
-    width: 20%;
+div#tags ul li {
+    display: inline;
+
+ 
 
 }
+
 span    
  {
     display: inline-block;
     margin:  1em;
    
-    text-align: right;
+    text-align: left;
 
    
 }
@@ -230,21 +241,44 @@ button {
     border: #B34031 2px solid;
 }
 footer {
+    
+   
+    background-color: #0260B3;
+    height: 6rem;
+    
+}
+
+div#contacts {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #0260B3;
-    height: 50px;
+    justify-content: space-between;
     text-align: center;
     font-size: 0.5rem;
+    text-align: center;
+    width: 50%;
+   
 }
 
 div#contacts i {
-    padding: 0.1em;
+    padding: 0.2em;
     font-size: 2em;
     color: white;
     border: 2px solid #B34031;
     align-self: baseline;
+    margin: 5px;
+}
+
+div#contacts a {
+    color: white;
+    text-decoration: none;
+}
+footer p{
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (max-width : 600px){
@@ -283,8 +317,6 @@ section#home p {
     article {
     
        display: block;
-
-
     }
 
     p  strong {
@@ -295,7 +327,6 @@ section#home p {
         display: block;
         text-align: center;
     }
-
     div#name {
         display: block;
         text-align: center;
@@ -312,11 +343,6 @@ section#home p {
         display: block;
         text-align: center;
     }
-
-    section#contact {
-
-    }
-
  
   }
   
