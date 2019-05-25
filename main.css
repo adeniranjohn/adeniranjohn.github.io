@@ -287,7 +287,10 @@ footer p{
 }
 
 @media screen and (max-width : 600px){
-
+    p#summary  {
+        color: #B34031;
+        font-size: 0.6em;
+    }
 nav {
     background-color: #0260B3;
     display: flex;
@@ -299,13 +302,18 @@ nav {
 
 nav a {
     text-align: center;
-    border-bottom: 2px solid #E7FF96;
+    border-bottom: 2px solid #B34031;
 }
 
 section#home p {
     margin: 0 auto;
 }
 
+div#contacts {
+    font-size: 0.5em;
+    margin: 0 auto;
+    width: 80%;
+}
 
 
 }
