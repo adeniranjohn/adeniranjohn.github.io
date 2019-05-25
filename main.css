@@ -1,7 +1,7 @@
 
 html, body {
     box-sizing: border-box;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Karla', Garamond,sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -132,6 +132,10 @@ p#summary {
     padding: 0;
   
 }
+
+p#summary > span {
+    color: #B34031;
+}
 section#home {
     display: flex;
     flex-direction: column;
@@ -256,6 +260,7 @@ div#contacts {
     font-size: 0.5rem;
     text-align: center;
     width: 50%;
+    margin: 0 auto;
    
 }
 
