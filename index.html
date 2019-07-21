@@ -7,7 +7,7 @@
     <title>John Adeniran</title>
     <meta name="description" content="John Adeniran Portfolio page">
     <meta name="theme-color" content="#0975CA" />
-    <link rel="manifest" href="/manifest.json">
+    <!--<link rel="manifest" href="/manifest.json">-->
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
         maximum-scale=1.0, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
@@ -18,43 +18,44 @@
 </head>
 
 <body>
-    <header>
+
+    <main>
         <article>
+            <header>
+                <section id="tags">
+                    <ul>
+                        <li><a href="https://github.com/adeniranjohn" alt="GitHub" target="_blank" rel="noopener"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="https://stackoverflow.com/users/6594090/adeniran-john" target="_blank"
+                                rel="noopener" aria-label="StackOverFlow"><i class="fab fa-stack-overflow"
+                                    alt="StackOverflow"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/adeniranjohn" alt="LinkedIn" target="_blank"
+                                rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </section>
+
+                <nav>
+                    <!--<a href="#projects" rel="noopener"><i class="fas fa-project-diagram"></i>Projects</a>-->
+                    <a href="#education" rel="noopener"><i class="fas fa-graduation-cap"></i>Education</a>
+                    <a href="#skillset" rel="noopener"><i class="fas fa-hands-helping"></i>SkillSet</a>
+                    <a href="#experience" rel="noopener"><i class="fas fa-suitcase"></i>Experience</a>
+                    <a href="#contact" rel="noopener"><i class="fas fa-address-book"></i>Contact</a>
+                </nav>
+            </header>
+            <section id="home">
+                <div id="todayDate"></div>
+            </section>
             <div id="logo">
                 <img src="https://res.cloudinary.com/blackjohn/image/upload/v1554350699/BlackJohn.jpg"
                     alt="Profile Image">
             </div>
             <div id="name">
                 <h1>John Adeniran</h1>
-                <div id="quote">Full Stack Developer</div>
+                <div id="quote">Full Stack Javascript Developer</div>
             </div>
-
-            <section id="tags">
-                <ul>
-                    <li><a href="https://github.com/adeniranjohn" alt="GitHub" target="_blank" rel="noopener"
-                            aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </li>
-                    <li><a href="https://stackoverflow.com/users/6594090/adeniran-john" target="_blank" rel="noopener"
-                            aria-label="StackOverFlow"><i class="fab fa-stack-overflow" alt="StackOverflow"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/adeniranjohn" alt="LinkedIn" target="_blank" rel="noopener"
-                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </section>
         </article>
-
-        <nav>
-            <!--<a href="#projects" rel="noopener"><i class="fas fa-project-diagram"></i>Projects</a>-->
-            <a href="#education" rel="noopener"><i class="fas fa-graduation-cap"></i>Education</a>
-            <a href="#skillset" rel="noopener"><i class="fas fa-hands-helping"></i>SkillSet</a>
-            <a href="#experience" rel="noopener"><i class="fas fa-suitcase"></i>Experience</a>
-            <a href="#contact" rel="noopener"><i class="fas fa-address-book"></i>Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <div id="todayDate"></div>
-        </section>
         <!--<section id="projects">
             <ul>
                 <li> Project under construction</li>
@@ -65,12 +66,18 @@
 
             <h2><i class="fas fa-graduation-cap"></i> Education & Certifications </h2>
             <ul class="points">
-                <li><p></p><strong>PGD in Information Technology</strong> National Open University | PGD(Information
-                        Technology)</p></li>
-                <li><p><strong>HND in Computer Engineering</strong> Federal Polytechnic, Offa | HND (COmputer
-                        Engineering)</p></li>
-                <li><p><strong>OND in Computer Engineering </strong> Federal Polytechnic, Offa | OND(Computer
-                        Engineering)</p></li>
+                <li>
+                    <p></p><strong>PGD in Information Technology</strong> National Open University | PGD(Information
+                    Technology)</p>
+                </li>
+                <li>
+                    <p><strong>HND in Computer Engineering</strong> Federal Polytechnic, Offa | HND (COmputer
+                        Engineering)</p>
+                </li>
+                <li>
+                    <p><strong>OND in Computer Engineering </strong> Federal Polytechnic, Offa | OND(Computer
+                        Engineering)</p>
+                </li>
             </ul>
 
         </section>
@@ -78,18 +85,20 @@
             <div class="skills">
                 <h2><i class="fas fa-laptop-code"></i> Skill sets </h2>
                 <ul class="points">
-                    <li><p><strong>Languages: </strong>Java | Javascript | Python</p>
-                    </li>
-                    <li><p><strong>Framework: </strong>NodeJS | AngularJS</p>
-                    <li><p><strong>Technology: </strong>HTML | JSON | ServiceWorker | Single Page Apps | Progressive Web
+
+                    <li>
+                        <p><strong>Framework: </strong>NodeJS | AngularJS</p>
+                    <li>
+                        <p><strong>Technology: </strong>HTML | JSON | ServiceWorker | Single Page Apps | Progressive Web
                             Apps
                     </li>
                     </p>
                     </li>
-                    <li><p><strong>Databases: </strong>Microsoft SQL Sever | MongoDB | MySQL</p>
+                    <li>
+                        <p><strong>Databases: </strong>Microsoft SQL Sever | MongoDB | MySQL</p>
                     </li>
                     <li>
-                        <p><strong>IDE: </strong>VS Code | Netbeans | Visual Studio</p>
+                        <p><strong>IDE: </strong>VS Code | Visual Studio</p>
                     </li>
                     <li>
                         <p><strong>Source Control: </strong>GitBash | GitHub</p>
@@ -106,7 +115,7 @@
         </section>
         <section id="experience">
             <h2><i class="fas fa-calendar-week"></i> Experience</h2>
-            <h4>Freelance Web Developer - June 2017– till date</h4>
+            <h4>Javascript Developer - June 2017– till date</h4>
             <ul class="points">
                 <li> Project under construction</li>
             </ul>
@@ -144,14 +153,14 @@
             <div id="messageme">
                 <h3><i class="fas fa-envelope-open-text"></i> Reach out </h3>
                 <form action="" method="POST">
-                    
-                        <label for="name">Name</label>
-                        <input type="text" aria-label="name" name="name" id="name">
-                        <label for="email">Email </label>
-                        <input type="text" aria-label="email" name="email" id="email"> 
-                        <label for="message">Message</label>
-                        <textarea rows="20" aria-label="message" name="message" id="message"></textarea> 
-                        <button type="submit">Send</button>
+
+                    <label for="name">Name</label>
+                    <input type="text" aria-label="name" name="name" id="name">
+                    <label for="email">Email </label>
+                    <input type="text" aria-label="email" name="email" id="email">
+                    <label for="message">Message</label>
+                    <textarea rows="20" aria-label="message" name="message" id="message"></textarea>
+                    <button type="submit">Send</button>
                 </form>
             </div>
             </div>
@@ -164,7 +173,7 @@
         <div id="contacts">
             <a href="#"><i class="fas fa-envelope"></i>e-mail</a>
             <a href="#"><i class="fab fa-github"></i>GitHub</a>
-            <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a> 
+            <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
         </div>
         <p>Copyright(c) May,2019</p>
         <address>Lagos,Nigeria</address>

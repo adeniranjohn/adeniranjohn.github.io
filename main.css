@@ -9,21 +9,24 @@ html, body {
 }
 header {
     width: 100%;
-    margin: 0;
-    padding:0;
-}
-
-article {
-
-    margin:0;
-    padding: 1em;
+    height: 100px;
+    background-color: #0260B3;
     display: grid;
-    grid-template-columns:1fr 4fr 2fr;
-    align-items: center;
-    grid-gap: 5px;
-    height: auto;
-    
+    grid-row: 500px;
+
 }
+
+
+section#tags {
+    display: inline;
+   
+}
+
+nav {   
+    background-color: #0260B3;
+    color: white;
+}
+
 div#logo {
     margin: 0;
     padding: 0;
@@ -39,11 +42,7 @@ div#name h1 {
     padding: 0;
 }
 
-section#tags {
-    justify-self: center;
 
-    
-}
 
 section#tags ul li i  {
     font-size: 1.5rem;
@@ -69,16 +68,7 @@ div img {
     padding:0;
 }
 
-nav {
-   
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: #0260B3;
-    color: white;
-}
+
 
 
 nav a i {
