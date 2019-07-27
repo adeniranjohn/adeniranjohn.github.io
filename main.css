@@ -12,13 +12,14 @@ header {
     height: 100px;
     background-color: #0260B3;
     display: grid;
-    grid-row: 500px;
+    grid-template-rows: 100px 1fr;
+
 
 }
 
 
 section#tags {
-    display: inline;
+
    
 }
 
