@@ -1,7 +1,25 @@
 {
     "name": "john adeniran",
-    "title": "software developer",
-    "education":[
+    "title": "software developer | hardware fixer",
+    "education":[{
+        "date": "2014",
+        "certificate": "PGD in Information Technology",
+        "institution":"National Open University, Nigeria"
+    },{
+        "date": "2014",
+        "certificate": "PGD in Information Technology",
+        "institution":"National Open University, Nigeria"
+    }
     
+    ],
+    "socials": [
+        {
+            "linkedin":"https://www.linkedin.com/in/adeniranjohn",
+            "stackoverflow": "https://stackoverflow.com/users/6594090/adeniran-john",
+            "github":"https://github.com/adeniranjohn"
+        }
+    ],
+    "badges":[
+
     ]
 }

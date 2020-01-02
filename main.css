@@ -1,365 +1,110 @@
-
 html, body {
-    box-sizing: border-box;
-    font-family: 'Karla', Garamond,sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x:hidden;
-}
-header {
-    width: 100%;
-    margin: 0;
-    padding:0;
-}
-
-article {
-
-    margin:0;
-    padding: 1em;
-    display: grid;
-    grid-template-columns:1fr 4fr 2fr;
-    align-items: center;
-    grid-gap: 5px;
-    height: auto;
-    
-}
-div#logo {
-    margin: 0;
-    padding: 0;
-    justify-self: center;
-}
-
-div#name {
-    text-align: left;
-}
-
-div#name h1 {
-    margin: 0;
-    padding: 0;
-}
-
-section#tags {
-    justify-self: center;
-
-    
-}
-
-section#tags ul li i  {
-    font-size: 1.5rem;
-    color: #4F77B3;
-    border: 2px solid #B34031;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
     padding: 5px;
 }
 
-
-strong i, h3 i {
-    border: 2px solid #B34031;
-    padding: 5px;
-}
-div#quote {
-    margin: 0;
-    padding: 0;
-}
-
-div img {
+div#logo img {
     border-radius: 50%;
-   
-    margin: 0 auto;
-    padding:0;
+    padding: none;
 }
-
-nav {
-   
-    
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+section#title {
+    text-align: center;
+}
+section#tags {
+    text-align: center;
+}
+section#tags ul, nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-flow: row;
     flex-wrap: wrap;
-    background-color: #0260B3;
-    color: white;
+    padding: 0;
 }
 
+section#tags ul li {
+    width : 30%;
+    
+}
+section#tags ul li i {
+    color: #588041;
+} 
+section#tags ul li,
+nav ul li {
+    list-style: none;
+}
 
-nav a i {
-    padding: 0.1em;
+i {
+    display: inline;
+    margin: auto;
+    padding: 0.2em;
+}
+
+nav ul {
+    font-size: 0.8em;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    list-style-type: none;
+    margin: 5px auto;
+}
+
+nav ul li {
+    width: 40%;
+    padding: 0.3em;
+    margin: 0.3em;
+    background-color: #588041;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #E0FFCF;
+}
+ h2 {
+     font-size: 1.2em;
+     color: #588041;
+ }
+ h4 {
+     font-size: 1em;
+ }
+
+ ul li {
+    list-style-type: none;
+ }
+span.date {
     font-size: 0.8em;
 }
-
-nav a {
-    text-decoration: none;
-    padding: 0.2em;
-    margin: 0.5em;
-    flex: 1;
-    align-self: center;
-    background-color: rgb(9, 117, 211);
-    color: white;
-}
-
-nav a:focus {
-    font-size: 1.2em;
-    text-align: center;
-    
-}
-
-
-
-section#tags ul {
-    text-align: center;
-    padding: 0; 
-    margin: 0;
-    vertical-align: middle;
-}
-
-
-section#tags ul li {
-    text-decoration: none;
-    display: inline-block;
-    color:#0260B3;
-    margin: 0;
-}
-
-ul.points ul li {
-    display: block;
-    text-align: left;
-}
-section#experience h4 {
-    padding-inline-start: 40px;
-
-}
-p#summary {
-    margin: 0;
-    padding: 0;
-  
-}
-
-p#summary > span {
-    color: #B34031;
-}
-section#home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-section#home h1 {
-    color: rgb(0, 72, 206);
-    margin: 0 auto;
-}
-
-section#tags ul li a {
-    text-align: center;
-}
-
-section#tags ul li {
-    padding: 0.5em;
-}
-
-main {
-    margin: 0.5rem;
-}
-section#home,
-section#projects,
-section#education,
-section#skillset,
-section#experience,
-section#contact {
-
-    margin: 0 auto;
-    color: #4F77B3;
-    width: 95%;
-}
-section#projects {
-    margin: auto auto;
-    vertical-align: middle;
-}
-div#contacts {
-    display: flex;
-    flex-direction: row;
-    margin: 1em;
-    flex-wrap: wrap;
-}
-
-
-div#messageme {
-    overflow: hidden;
-    flex: 1;
-    padding: 1em;
-
-}
- 
-ul.points {
-    margin:0;
-    text-align: left;
-}
-h2  {
-    text-align: left;
-    margin: 1em;
+label {
     display: block;
 }
 
-form button, label {
+input, textarea {
     display: block;
-    
-}
-
-
-
-
-
-div > input,textarea {
     width: 80%;
-    padding: 0.75em;
-    color: rgb(9, 117, 211);
-    
-    border: 1px solid #B34031;
-    border-radius: 2px;
-}
-
-p.label{
-    display: inline;
-    margin: 0 2em 0 0;
-    font-size: bold;
-}
-
-section#tags ul li {
-    display: inline;
-
- 
 
 }
 
-span    
- {
-    display: inline-block;
-    margin:  1em;
-   
-    text-align: left;
-
-   
-}
 button {
-    color: white;
-    background-color:  rgb(9, 117, 211);
-    padding: 0.75em;
-    border-radius: 5px;
-    border: #B34031 2px solid;
-}
-footer {
-    
-   
-    background-color: #0260B3;
-    height: 6rem;
-    
+    margin: 0.5em 0;
 }
 
-div#contacts {
+textarea {
+    
+    resize: none;
+    overflow: auto;
+}
+
+footer ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 0.5rem;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-   
-}
-
-div#contacts i {
-    padding: 0.2em;
-    font-size: 2em;
-    color: white;
-    border: 2px solid #B34031;
-    align-self: baseline;
-    margin: 5px;
-}
-
-div#contacts a {
-    color: white;
-    text-decoration: none;
-}
-footer p{
-    display: block;
-    text-align: center;
-    color: white;
-    font-size: 0.7em;
-    margin: 0;
+    flex-flow: wrap;
+    width: 90%;
     padding: 0;
-}
-
-@media screen and (max-width : 600px){
-    p#summary  {
-        color: #B34031;
-        font-size: 0.6em;
-    }
-nav {
-    background-color: #0260B3;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-   
-}
-
-nav a {
     text-align: center;
-    border-bottom: 2px solid #B34031;
-    flex-grow: 1;
-    flex-basis: 25%;
- 
 }
 
-section#home p {
-    margin: 0 auto;
+footer ul li {
+    width: 25%;
+    text-align: center;
 }
-
-div#contacts {
-    font-size: 0.5em;
-    margin: 0 auto;
-    width: 80%;
-}
-
-
-}
-
-@media (min-width: 659px) and (max-width: 1002px){
-
-
-}
-  
-
-  
-  @media (min-width: 300px) and (max-width: 600px) {
-    
-    article {
-    
-       display: block;
-    }
-
-    p  strong {
-        display: block;
-    }
-
-    div#logo {
-        display: block;
-        text-align: center;
-    }
-    div#name {
-        display: block;
-        text-align: center;
-    }
-
-    nav {
-        flex-wrap: wrap;
-       }
-
-    nav a {
-        color: white;
-    }
-    section#tags {
-        display: block;
-        text-align: center;
-    }
- 
-  }
-  

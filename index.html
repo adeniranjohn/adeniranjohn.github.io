@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>John Adeniran</title>
     <meta name="description" content="John Adeniran Portfolio page">
-    <meta name="theme-color" content="#0975CA" />
+    
     <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
         maximum-scale=1.0, user-scalable=no" />
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
@@ -20,15 +20,16 @@
 <body>
     <header>
         <article>
+            <section id="title">
             <div id="logo">
                 <img src="https://res.cloudinary.com/blackjohn/image/upload/v1554350699/BlackJohn.jpg"
-                    alt="Profile Image">
+                    alt="Adeniran John Profile Image">
             </div>
             <div id="name">
-                <h1>John Adeniran</h1>
-                <div id="quote">Full Stack Developer</div>
+                <h1>john adeniran</h1>
+                <div id="quote"><p>software developer | hardware fixer </p></div>
             </div>
-
+        </section>
             <section id="tags">
                 <ul>
                     <li><a href="https://github.com/adeniranjohn" alt="GitHub" target="_blank" rel="noopener"
@@ -44,17 +45,20 @@
         </article>
 
         <nav>
-            <!--<a href="#projects" rel="noopener"><i class="fas fa-project-diagram"></i>Projects</a>-->
-            <a href="#education" rel="noopener"><i class="fas fa-graduation-cap"></i>Education</a>
-            <a href="#skillset" rel="noopener"><i class="fas fa-hands-helping"></i>SkillSet</a>
-            <a href="#experience" rel="noopener"><i class="fas fa-suitcase"></i>Experience</a>
-            <a href="#contact" rel="noopener"><i class="fas fa-address-book"></i>Contact</a>
+            <ul>
+            <li><a href="#projects" rel="noopener"><i class="fas fa-tasks"></i></i>Projects</a></li>
+            <!--<li><a href="#education" rel="noopener"><i class="fas fa-graduation-cap"></i>Education</a></li>-->
+            <li><a href="#skillset" rel="noopener"><i class="fas fa-hands-helping"></i>SkillSet</a></li>
+            <li><a href="#experience" rel="noopener"><i class="fas fa-suitcase"></i>Experience</a></li>
+            <li><a href="#contact" rel="noopener"><i class="fas fa-address-book"></i>Contact</a></li>
+            </ul>
         </nav>
     </header>
+    <section id="home">
+        <div id="todayDate"></div>
+    </section>
     <main>
-        <section id="home">
-            <div id="todayDate"></div>
-        </section>
+        
         <!--<section id="projects">
             <ul>
                 <li> Project under construction</li>
@@ -67,7 +71,7 @@
             <ul class="points">
                 <li><p></p><strong>PGD in Information Technology</strong> National Open University | PGD(Information
                         Technology)</p></li>
-                <li><p><strong>HND in Computer Engineering</strong> Federal Polytechnic, Offa | HND (COmputer
+                <li><p><strong>HND in Computer Engineering</strong> Federal Polytechnic, Offa | HND (Computer
                         Engineering)</p></li>
                 <li><p><strong>OND in Computer Engineering </strong> Federal Polytechnic, Offa | OND(Computer
                         Engineering)</p></li>
@@ -106,14 +110,13 @@
         </section>
         <section id="experience">
             <h2><i class="fas fa-calendar-week"></i> Experience</h2>
-            <h4>Freelance Web Developer - June 2017– till date</h4>
+            <h4>Freelance Web Developer</h4><span class="date">June 2017– till date</span>
             <ul class="points">
                 <li> Project under construction</li>
             </ul>
 
-            <h4>West African Examination Council, Yaba - Information and Communication Technology/Operations - March
-                2016–
-                till date</h4>
+            <h4>West African Examination Council, Yaba - Information and Communication Technology/Operations</h4><span class="date">March
+                2016–till date</span>
             <ul class="points">
                 <li>Developing and implementing data collection systems and other strategies that optimize processing
                     efficiency
@@ -123,7 +126,7 @@
                 <li>Define new process improvement opportunities in order to minimize error and achieve 100% accuracy
                     in data gathered</li>
             </ul>
-            <h4>West African Examination Council, Yaba - Hardware/OS Engineer - Feb 2012-March 2016</h4>
+            <h4>West African Examination Council, Yaba - Hardware/OS Engineer</h4><span class="date">Feb 2012-March 2016</span>
             <ul class="points">
                 <li>Troubleshooting and maintenance of workstations in Scanning/Data entry room.</li>
                 <li> Workstations operation on Windows Server 2008/IBM AS400 (i-series) DRS/NANHAO OMR scanner
@@ -142,30 +145,33 @@
             <h2><i class="fas fa-address-book"></i> Contact</h2>
 
             <div id="messageme">
-                <h3><i class="fas fa-envelope-open-text"></i> Reach out </h3>
+                <h4><i class="fas fa-envelope-open-text"></i> Reach out </h4>
                 <form action="" method="POST">
                     
-                        <label for="name">Name</label>
-                        <input type="text" aria-label="name" name="name" id="name">
-                        <label for="email">Email </label>
-                        <input type="text" aria-label="email" name="email" id="email"> 
-                        <label for="message">Message</label>
-                        <textarea rows="20" aria-label="message" name="message" id="message"></textarea> 
+                        <label for="name">Name
+                        <input type="text" aria-label="name" name="name" id="name" placeholder="Name"></label>
+                        <label for="email" >Email 
+                        <input type="text" aria-label="email" name="email" id="email" placeholder="someone@example.com"> </label>
+                        <label for="message">Message
+                        <textarea rows="20" aria-label="message" name="message" id="message" placeholder="Kindly message us..."></textarea></label>
                         <button type="submit">Send</button>
                 </form>
             </div>
             </div>
+            
         </section>
 
 
     </main>
 
     <footer>
-        <div id="contacts">
-            <a href="#"><i class="fas fa-envelope"></i>e-mail</a>
-            <a href="#"><i class="fab fa-github"></i>GitHub</a>
-            <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a> 
-        </div>
+        
+            <ul>
+            
+            <li><a href="#"><i class="fas fa-envelope"></i>e-mail</a></li>
+        <li><a href="#"><i class="fab fa-github"></i>GitHub</a></li>
+    <li><a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
         <p>Copyright(c) May,2019</p>
         <address>Lagos,Nigeria</address>
     </footer>
