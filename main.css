@@ -4,9 +4,23 @@ html, body {
     padding: 5px;
 }
 
+header {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+header article{
+    margin: 50% 0;
+    padding: 0;
+
+}
+
 div#logo img {
     border-radius: 50%;
     padding: none;
+
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -41,10 +55,14 @@ i {
     margin: auto;
     padding: 0.2em;
 }
-
+nav {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 nav ul {
     font-size: 0.8em;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
     text-align: center;
     list-style-type: none;
@@ -52,9 +70,7 @@ nav ul {
 }
 
 nav ul li {
-    width: 40%;
     padding: 0.3em;
-    margin: 0.3em;
     background-color: #588041;
     
 }
