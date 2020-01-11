@@ -1,13 +1,13 @@
 html, body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Rubik', sans-serif;
-    padding: 5px;
+    padding: 0;
+    margin: 0;
 }
 
 header {
     padding: 0;
     margin: 0;
-    height: 100vh;
     vertical-align: middle;
 }
 
@@ -20,7 +20,12 @@ header article{
 div#logo img {
     border-radius: 50%;
     padding: none;
+    width: 100px;
 
+}
+
+div#name q {
+    font-size: 10px;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -46,9 +51,7 @@ section#tags ul li i {
     color: #588041;
 } 
 section#tags ul li,
-nav ul li {
-    list-style: none;
-}
+
 
 i {
     display: inline;
@@ -57,27 +60,34 @@ i {
 }
 nav {
     padding: 0;
-    margin: 0;
+    margin: 0  auto;
     text-align: center;
+    background-color: #588041;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    cursor: pointer;
 }
 nav ul {
     font-size: 0.8em;
-    width: 100%;
-    box-sizing: border-box;
     text-align: center;
+    padding: 5px;
     list-style-type: none;
-    margin: 5px auto;
+    margin: 0;
+    display: flex;
+    flex-flow: wrap;
 }
 
 nav ul li {
-    padding: 0.3em;
+    padding: 5px;
     background-color: #588041;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    margin: 0.1em;
     
 }
-nav ul li a {
-    text-decoration: none;
-    color: #E0FFCF;
-}
+
  h2 {
      font-size: 1.2em;
      color: #588041;
@@ -112,15 +122,52 @@ textarea {
     overflow: auto;
 }
 
-footer ul {
+footer {
+    position: fixed;
+    bottom: 0px;
     display: flex;
-    flex-flow: wrap;
-    width: 90%;
-    padding: 0;
-    text-align: center;
+    flex-flow: row;
+    background-color: #588041;
+    width: 100vw;
+    padding: 0.3em;
+}
+footer address {
+    text-align: left;
+    font-size: 0.5em;
 }
 
-footer ul li {
-    width: 25%;
-    text-align: center;
+footer button {
+    text-align: right;
+
+}
+
+footer button a {
+    text-decoration: none;
+}
+footer address,
+footer div {
+    width: 50vw;
+}
+
+[data-section-content],
+article {
+    display: none;
+    
+   
+    padding:0;
+    margin: 0;
+}
+article#home {
+   
+}
+.active[data-section-content] {
+    display: block;
+    padding: 50px 10px 10px 10px;
+    box-sizing: border-box;
+    height: 90vh;
+    width: 100vw;
+}
+
+input, textarea {
+    border: 1px solid #588041;
 }

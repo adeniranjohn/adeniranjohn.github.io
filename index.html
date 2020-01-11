@@ -21,14 +21,14 @@
     <header>
             <nav>
                     <ul>
-                    <li><a href="#projects" rel="noopener"><i class="fas fa-tasks"></i></i>Projects</a></li>
+                    <li data-tab-target="#home"><i class="fas fa-tasks"></i></i>Home</li>
                     <!--<li><a href="#education" rel="noopener"><i class="fas fa-graduation-cap"></i>Education</a></li>-->
-                    <li><a href="#skillset" rel="noopener"><i class="fas fa-hands-helping"></i>SkillSet</a></li>
-                    <li><a href="#experience" rel="noopener"><i class="fas fa-suitcase"></i>Experience</a></li>
-                    <li><a href="#contact" rel="noopener"><i class="fas fa-address-book"></i>Contact</a></li>
+                    <li data-tab-target="#skillset"><i class="fas fa-hands-helping"></i>SkillSet</li>
+                    <li data-tab-target="#experience"><i class="fas fa-suitcase"></i>Experience</li>
+                    <li data-tab-target="#contact"><i class="fas fa-address-book"></i>Contact</li>
                     </ul>
             </nav>
-        <article>
+        <article data-section-content id="home" class="active">
             <section id="title">
             <div id="logo">
                 <img src="https://res.cloudinary.com/blackjohn/image/upload/v1554350699/BlackJohn.jpg"
@@ -36,6 +36,9 @@
             </div>
             <div id="name">
                 <h1>john adeniran</h1>
+                <q>
+                    i speak javascript in Angular and React dialect 
+                </q>
                 <div id="quote"><p>software developer | hardware fixer </p></div>
             </div>
         </section>
@@ -51,11 +54,10 @@
                             aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </section>
+         
         </article>
+     
     </header>
-    <section id="home">
-        <div id="todayDate"></div>
-    </section>
     <main>
         
         <!--<section id="projects">
@@ -64,7 +66,7 @@
                 <li><i class="fas fa-tools"></i></li>
             </ul>
         </section>-->
-        <section id="education">
+        <section data-section-content id="education">
 
             <h2><i class="fas fa-graduation-cap"></i> Education & Certifications </h2>
             <ul class="points">
@@ -77,7 +79,7 @@
             </ul>
 
         </section>
-        <section id="skillset">
+        <section data-section-content id="skillset">
             <div class="skills">
                 <h2><i class="fas fa-laptop-code"></i> Skill sets </h2>
                 <ul class="points">
@@ -107,7 +109,7 @@
 
             </div>
         </section>
-        <section id="experience">
+        <section data-section-content id="experience">
             <h2><i class="fas fa-calendar-week"></i> Experience</h2>
             <h4>Freelance Web Developer</h4><span class="date">June 2017– till date</span>
             <ul class="points">
@@ -140,7 +142,7 @@
                 </li>
             </ul>
         </section>
-        <section id="contact">
+        <section data-section-content id="contact">
             <h2><i class="fas fa-address-book"></i> Contact</h2>
 
             <div id="messageme">
@@ -162,12 +164,13 @@
 
 
     </main>
-
-    <footer>
-        <span>Copyright(c) May,2019</span>
-        <address><i class="fas fa-map-marker-alt"></i>Lagos,Nigeria</address>
-        <button>Download CV</button>
-    </footer>
+<footer>
+    <address><i class="fas fa-map-marker-alt"></i>Lagos,Nigeria</address>
+    <button>
+            <a href="https://docs.google.com/document/d/1spjwshgeOjIvIsZfotHmAr0LVjTlstLbj85rArdgb8A/edit?usp=sharing" download="adeniranjohnCV" target="_blank">Download CV</button>
+    </button>
+        
+ </footer>
 
 </body>
 
