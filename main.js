@@ -32,13 +32,17 @@ function time() {
 setInterval(time,1000)
 
 
-if('serviceWorker' in navigator){
-    navigator.serviceWorker
-    .register('serviceWorker.js',{scope:''})
-    .then(function(registration){
-        console.log('Service worker registered', registration);
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-section-content]');
+
+
+tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget);
+        tabContents.forEach(( tabContent) => {
+            tabContent.classList.remove('active');
+        })
+        target.classList.add('active');
+
     })
-    .catch(function(err){
-        console.log("Service worker failed to register",err);
-    })
-}
+})
