@@ -25,9 +25,9 @@ h1 {
 
 div#logo img {
     vertical-align: middle;
-    border-radius: 50%;
-    padding: none;
-    margin: auto auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
 div#name q {
@@ -130,6 +130,25 @@ p.techskill i.fa-html5 {
 
 .fa-git {
     color: #f34f29;
+}
+
+.fa-whatsapp {
+    color: #4FCE5D;
+}
+
+.fa-twitter {
+    color: #00acee;
+}
+
+.fa-envelope {
+    color: red;
+}
+
+.fa-mobile-alt {
+    color: black;
+}
+.fa-map-marker-alt{
+    color: red;
 }
 
 section#tags ul li i.fa-github {
