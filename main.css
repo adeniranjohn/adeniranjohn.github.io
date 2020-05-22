@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
     max-width: 960px;
+    color: #4A677F;
 }
 
 header {
@@ -55,7 +56,6 @@ nav ul {
 
 
 section#tags ul li i {
-    color: #08497F;
     font-size: 1.2em;
 
 }
@@ -98,8 +98,51 @@ nav ul li {
 
 }
 
+i {
+    padding: 5px;
+}
 
+p.techskill {
+    font-size: 2.5em;
+}
 
+p.techskill i.fa-html5 {
+    color: #F16529;
+}
+
+.fa-css3 {
+    color: #264de4;
+}
+
+.fa-js {
+    color: #323330;
+    background-color: #F0DB4F;
+    padding: 0;
+}
+
+.fa-node-js {
+    color: #3C873A;
+}
+
+.fa-angular {
+    color: #B52E31;
+}
+
+.fa-git {
+    color: #f34f29;
+}
+
+section#tags ul li i.fa-github {
+    color: #211F1F;
+}
+
+section#tags ul li i.fa-stack-overflow {
+    color: #F48024
+}
+
+section#tags ul li i.fa-linkedin {
+    color: #0e76a8;
+}
 
 span.date {
     font-size: 0.8em;
@@ -149,8 +192,8 @@ footer a {
 
 footer a {
     border: 1px solid #08497F;
-    background-color: white;
-    color: #08497F;
+    background-color: #94CEFF;
+    color: #4A677F;
     margin: 5px;
     border-radius: 5px;
 }
@@ -165,7 +208,9 @@ article {
     margin: 0;
 }
 
-article#home {}
+article#home {
+    padding: 200px 10px;
+}
 
 .active[data-section-content] {
     display: block;
