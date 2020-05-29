@@ -7,13 +7,15 @@
     <title>John Adeniran</title>
     <meta name="description" content="John Adeniran Portfolio page">
     
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
         maximum-scale=1.0, user-scalable=no" />
+        <meta name="theme-color" content="#08497F">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="icon-192.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" async defer>
     <script src="main.js" async defer></script>
 </head>
 
@@ -69,13 +71,7 @@
      
     </header>
     <main>
-        
-        <!--<section id="projects">
-            <ul>
-                <li> Project under construction</li>
-                <li><i class="fas fa-tools"></i></li>
-            </ul>
-        </section>-->
+    
         <section data-section-content id="education">
             
         </section>
@@ -108,7 +104,7 @@
                         <p><strong>Hardware: </strong>Laptop Repair | Data Recovery | MotherBoard | Printers</p>
                     </li>
                 </ul>
-
+                <p>Code snippets on codepen</p>
             </div>
         </section>
         <section data-section-content id="experience">
@@ -156,10 +152,17 @@
 <footer>
     <span><i class="fas fa-map-marker-alt"></i>Lagos,Nigeria</span>
 
-    <a href="https://docs.google.com/document/d/1spjwshgeOjIvIsZfotHmAr0LVjTlstLbj85rArdgb8A/edit?usp=sharing" download="adeniranjohnCV" target="_blank">Download CV</button>
+    <a href="https://docs.google.com/document/d/1spjwshgeOjIvIsZfotHmAr0LVjTlstLbj85rArdgb8A/edit?usp=sharing" alt="CV" download="adeniranjohnCV" target="_blank">Download CV</button>
 
         
  </footer>
+ <script>
+     if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('serviceWorker.js');
+            });
+        }
+</script>
 
 </body>
 

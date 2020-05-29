@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0;
     max-width: 960px;
-    color: #4A677F;
+
 }
 
 header {
@@ -25,7 +25,7 @@ h1 {
 
 div#logo img {
     vertical-align: middle;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
     margin: 10px;
 }
@@ -103,11 +103,14 @@ nav ul li {
 
 }
 
+nav ul li:active {
+    color: #76A5CC;
+}
 
 nav ul li:hover,
 a:hover {
     font-size: 1.5em;
-    
+
 }
 
 i {
