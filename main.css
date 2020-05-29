@@ -51,8 +51,11 @@ nav ul {
     max-width: 500px;
     flex-flow: row;
     flex-wrap: wrap;
+    margin: 10px auto;
     padding: 5px;
 }
+
+
 
 
 section#tags ul li i {
@@ -88,6 +91,8 @@ nav ul {
 
 }
 
+
+
 nav ul li {
 
     color: white;
@@ -96,6 +101,13 @@ nav ul li {
     padding: 5px;
     margin: 5px;
 
+}
+
+
+nav ul li:hover,
+a:hover {
+    font-size: 1.5em;
+    
 }
 
 i {
@@ -147,7 +159,8 @@ p.techskill i.fa-html5 {
 .fa-mobile-alt {
     color: black;
 }
-.fa-map-marker-alt{
+
+.fa-map-marker-alt {
     color: red;
 }
 
