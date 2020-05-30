@@ -4,8 +4,8 @@
     "description": "John Adeniran portfolio page",
     "icons": [
         {
-            "src": "icon-192.jpg",
-            "type": "image/jpg",
+            "src": "icon-192.png",
+            "type": "image/png",
             "sizes": "192x192"
         },
         {
