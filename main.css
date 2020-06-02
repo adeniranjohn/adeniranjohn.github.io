@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
     max-width: 960px;
+    font-size: 16px;
 
 }
 
@@ -20,21 +21,26 @@ header article {
 }
 
 h1 {
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 0;
 }
 
-div#logo img {
-    vertical-align: middle;
-    border-radius: 30px;
-    padding: 10px;
-    margin: 10px;
-}
 
-div#name q {
+div#name  span {
+    margin: 0 auto;
+    display: block;
     font-size: 10px;
+    text-align: left;
+    width: 70%;
+    max-width: 400px;
+    font-size: larger;
 }
 
 
+div#messageme a {
+    text-decoration: none;
+}
 
 section#title {
     text-align: center;
@@ -44,8 +50,7 @@ section#tags {
     text-align: center;
 }
 
-section#tags ul,
-nav ul {
+section#tags ul {
     display: flex;
     list-style-type: none;
     max-width: 500px;
@@ -65,7 +70,6 @@ section#tags ul li i {
 
 section#tags ul li {
     display: flex;
-
     margin: auto;
     padding: 0.2em;
 }
@@ -73,44 +77,61 @@ section#tags ul li {
 nav {
     padding: 0;
     margin: 0 auto;
-    text-align: center;
     background-color: #08497F;
     position: fixed;
     top: 0px;
     width: 100vw;
     cursor: pointer;
+    display: block;
 }
 
 nav ul {
-    text-align: center;
-    padding: 5px;
-    margin: 0;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 5px;
+    display: block;
 
+}
+
+nav ul span {
+    float: right;
+}
+
+nav ul span::after {
+    clear: both;
+}
+span#signature {
+    font-size: 0.5em;
 }
 
 
 
 nav ul li {
-
+    padding: 5px;
+    display: inline;
     color: white;
     text-align: center;
     list-style-type: none;
-    padding: 5px;
-    margin: 5px;
 
 }
 
-nav ul li:active {
-    color: #76A5CC;
+nav ul li img {
+    width: 20px;
+    vertical-align: middle;
+    border-radius: 20%;
 }
 
-nav ul li:hover,
-a:hover {
-    font-size: 1.5em;
 
+nav ul li img:hover {
+    width: 30px;
+}
+
+nav ul li:hover {
+    font-size: 1.3em;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 i {
@@ -187,22 +208,12 @@ label {
     display: block;
 }
 
-input,
-textarea {
-    display: block;
-    width: 80%;
 
-}
 
 button {
     margin: 0.5em 0;
 }
 
-textarea {
-
-    resize: none;
-    overflow: auto;
-}
 
 footer {
     position: fixed;
@@ -213,23 +224,21 @@ footer {
     width: 100vw;
     justify-content: space-between;
     color: white;
-
+    margin: 5px;
+    font-size: 0.8em;
 }
 
-footer span,
-footer a {
+footer span {
     text-decoration: none;
     color: white;
-    padding: 5px;
-    margin: 5px;
+    padding: 2px;
+
 
 }
 
-footer a {
-    border: 1px solid #08497F;
-    background-color: #94CEFF;
-    color: #4A677F;
-    margin: 5px;
+footer button {
+    background-color: white;
+    color: #08497F;
     border-radius: 5px;
 }
 
@@ -244,7 +253,7 @@ article {
 }
 
 article#home {
-    padding: 200px 10px;
+    padding: 100px 10px;
 }
 
 .active[data-section-content] {
@@ -259,15 +268,13 @@ button {
     border: none;
     padding: 5px;
     box-shadow: none;
-    color: #E0F1FF;
+    color: white;
 }
 
 button a {
     text-decoration: none;
-
 }
 
-input,
-textarea {
-    border: 1px solid #588041;
+a:visited {
+    text-decoration: none;
 }

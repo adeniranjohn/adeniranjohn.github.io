@@ -11,9 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
         maximum-scale=1.0, user-scalable=no" />
         <meta name="theme-color" content="#08497F">
-                                <link rel="stylesheet" href="main.css" async defer>
+                                <link rel="stylesheet" href="main.css">
                                 <link rel="apple-touch-icon" href="icon-192.png">
-  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
 </head>
 
@@ -21,31 +22,32 @@
     <noscript>
           <link href="https://fonts.googleapis.com/css?family=Montserrat|Rubik&display=swap" rel="stylesheet">
                 
-                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-                        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                   
 
     </noscript>
     <header>
             <nav>
                     <ul>
-                    <li data-tab-target="#home">Home</li>
+                    <li data-tab-target="#home">
+                        <img src="https://res.cloudinary.com/blackjohn/image/upload/v1554350699/BlackJohn.jpg"
+                            alt="Adeniran John Profile Image">
+                    </li>
+                    <span>
                     <li data-tab-target="#skillset">SkillSets</li>
                     <li data-tab-target="#experience">Projects</li>
                     <li data-tab-target="#contact">Reach Out</li>
-                    </ul>
+                    </span>
+                </ul>
             </nav>
         <article data-section-content id="home" class="active">
             <section id="title">
-            <div id="logo">
-                <img src="https://res.cloudinary.com/blackjohn/image/upload/v1554350699/BlackJohn.jpg"
-                    alt="Adeniran John Profile Image">
-            </div>
             <div id="name">
-                <span>Hey, this is <strong>John Adeniran</strong> ,
-                     I am a freelance developer,
-                      i develop rich interactive websites and fast innovative web apps,
-                       I write REST APIs, with  Angular front-end framework.</span><br>
-                       <span>In short, i build products for companies with passion</span>
+                <span>I'm<h1><strong>John Adeniran</strong> ,</h1>
+                        a freelance developer,
+                      I develop rich interactive websites and fast innovative web apps,
+                       I write REST APIs, with  Angular front-end framework.<br>
+                      I build products for companies with passion</span><br>
+                    <span id="signature">❤ blackjohn</span>
                 
             </div>
         </section>
@@ -57,19 +59,10 @@
                     <li><a href="https://stackoverflow.com/users/6594090/adeniran-john" target="_blank" rel="noopener"
                             aria-label="StackOverFlow"><i class="fab fa-stack-overflow" alt="StackOverflow"></i></a>
                     </li>
-                    <li><a href="https://www.linkedin.com/in/adeniranjohn" alt="LinkedIn" target="_blank" rel="noopener"
-                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://codepen.io/jasolajohn" alt="Codepen" target="_blank" rel="noopener"
+                            aria-label="Codepen"><i class="fab fa-codepen"></i></a></li>
                 </ul>
-                <p class="techskill">
-                    
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-node-js"></i>
-                    <i class="fab fa-angular"></i>
-                    <i class="fab fa-git"></i>
-
-                </p>
+                
             </section>
          
         </article>
@@ -109,7 +102,7 @@
                         <p><strong>Hardware: </strong>Laptop Repair | Data Recovery | MotherBoard | Printers</p>
                     </li>
                 </ul>
-                <p>Code snippets on codepen</p>
+        
             </div>
         </section>
         <section data-section-content id="experience">
@@ -139,37 +132,36 @@
 
             <div id="messageme">
                 <h4>Socials</h4>
-                <p><i class="fab fa-twitter"></i> @jasolajohn</p>
-                <p><i class="fab fa-whatsapp"></i> Whatsapp</p>
+                <p><a href="https://twitter.com/jasolajohn" alt="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i> @jasolajohn</a></p>
+                <p><a href="https://www.linkedin.com/in/adeniranjohn" alt="LinkedIn" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
             </div>
                 <h4>Contacts</h4>
-                <p><i class="fas fa-envelope"></i> jasolajohn@gmail.com</p>
-                <p><i class="fas fa-mobile-alt"></i>08131510308</p>
+                <p><a  href="mailto:jasolajohn@gmail.com"  alt="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i>jasolajohn@gmail.com</a></p>
+                <p><a href="tel: +2348031510308" alt="Phone" target="_blank" rel="noopener"><i class="fas fa-mobile-alt"></i>08131510308</a></p>
             </div>
             
         </section>
-        <section id="certifications">
-        
 
-        </section>
 
     </main>
 <footer>
     <span><i class="fas fa-map-marker-alt"></i>Lagos,Nigeria</span>
 
-    <a href="https://docs.google.com/document/d/1spjwshgeOjIvIsZfotHmAr0LVjTlstLbj85rArdgb8A/edit?usp=sharing" alt="CV" download="adeniranjohnCV" target="_blank">Download CV</button>
+    <button><a href="https://docs.google.com/document/d/1spjwshgeOjIvIsZfotHmAr0LVjTlstLbj85rArdgb8A/edit?usp=sharing" alt="CV" download="adeniranjohnCV" target="_blank" rel="noreferrer">Download CV</a></button>
 
         
  </footer>
 <script src="main.js" async defer></script>
- <script>
+ <!--<script>
    
      if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('serviceWorker.js');
             });
         }
-</script>
+</script>-->
 
 </body>
 
