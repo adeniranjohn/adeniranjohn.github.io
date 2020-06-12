@@ -30,9 +30,8 @@ div#name  span {
     display: block;
     font-size: 10px;
     text-align: left;
-    width: 70%;
-    max-width: 400px;
-    font-size: 2rem;
+    max-width: 600px;
+    font-size: 1.8rem;
 }
 
 
