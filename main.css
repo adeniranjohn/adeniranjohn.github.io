@@ -1,18 +1,21 @@
 html,
 body {
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Rubik', sans-serif;
     padding: 0;
     margin: 0;
-    max-width: 960px;
     font-size: 16px;
+
+}
+
+body {
+    width: 100%;
+    max-width: 960px;
 
 }
 
 header {
     padding: 0;
     margin: 0;
-    vertical-align: middle;
 }
 
 
@@ -23,7 +26,13 @@ h1 {
     padding: 0;
 }
 
-
+section#title,
+section#tags {
+   margin-top: 50px;
+}
+div#name {
+    vertical-align: middle;
+}
 div#name  span {
     padding-top: 20px;
     margin: 0 auto;
@@ -41,6 +50,7 @@ div#messageme a {
 
 section#title {
     text-align: center;
+    padding: 10px;
 }
 
 section#tags {
