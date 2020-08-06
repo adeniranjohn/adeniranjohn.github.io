@@ -26,12 +26,20 @@ h1 {
     padding: 0;
 }
 
+section#title {
+    display: grid;
+    place-items: center;
+    vertical-align: middle;
+}
+
+
 section#title,
 section#tags {
    margin-top: 50px;
 }
 div#name {
     vertical-align: middle;
+
 }
 div#name  span {
     padding-top: 20px;
@@ -79,6 +87,13 @@ section#tags ul li {
     display: flex;
     margin: auto;
     padding: 0.2em;
+}
+
+div.skills,
+div.contact,
+div.experience {
+    margin: 0 auto;
+    padding: 10px;
 }
 
 nav {
