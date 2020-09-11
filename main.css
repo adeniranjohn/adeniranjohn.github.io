@@ -1,10 +1,10 @@
 html,
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'montserrat';
     padding: 0;
     margin: 0;
     font-size: 16px;
-
+    color: #08497F;
 }
 
 body {
@@ -35,13 +35,15 @@ section#title {
 
 section#title,
 section#tags {
-   margin-top: 50px;
+    margin-top: 50px;
 }
+
 div#name {
     vertical-align: middle;
 
 }
-div#name  span {
+
+div#name span {
     padding-top: 20px;
     margin: 0 auto;
     display: block;
@@ -99,7 +101,7 @@ div.experience {
 nav {
     padding: 0;
     margin: 0 auto;
-    background-color: #08497F;
+    line-height: 20px;
     position: fixed;
     top: 0px;
     width: 100vw;
@@ -129,9 +131,10 @@ nav ul span::after {
 nav ul li {
     padding: 5px;
     display: inline;
-    color: white;
+    color: #08497F;
     text-align: center;
     list-style-type: none;
+    font-weight: 500;
 
 }
 
