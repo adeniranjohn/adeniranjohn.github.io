@@ -301,3 +301,13 @@ button a {
 a:visited {
     text-decoration: none;
 }
+
+footer {
+    display: block;
+}
+
+footer span.center {
+    display: flex;
+    text-align: center;
+    flex
+}
